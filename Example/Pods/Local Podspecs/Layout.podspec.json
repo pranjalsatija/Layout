@@ -1,0 +1,22 @@
+{
+  "name": "Layout",
+  "version": "0.1.0",
+  "summary": "A short description of Layout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pranjalsatija/Layout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "pranjalsatija": "me@pranj.co"
+  },
+  "source": {
+    "git": "https://github.com/pranjalsatija/Layout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Layout/Classes/**/*"
+}
