@@ -25,7 +25,7 @@ public protocol LayoutProvider {
     var height: LayoutProperty<DimensionAnchor> { get }
 }
 
-extension LayoutProvider {
+public extension LayoutProvider {
     func pinEdges(to provider: LayoutProvider, edgeInsets: UIEdgeInsets = .zero) {
         leading == provider.leading + edgeInsets.left
         trailing == provider.trailing - edgeInsets.right
