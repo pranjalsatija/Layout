@@ -35,6 +35,17 @@ subview.layout {
 ## Inspiration
 This library draws a lot from SnapKit in terms of what the finished API should look like, but it's much simpler under the hood: it's under 200 LOC. In addition, my goal is to add more convenience functions to make common groups of constraints easier to build.
 
+## Installation
+To use the latest version (the master branch of this repo): 
+```
+pod 'Layout', :git => 'https://github.com/pranjalsatija/Layout'
+```
+
+To use a specific release (check the releases tab on this repo to see them all):
+```
+pod 'Layout', :git => 'https://github.com/pranjalsatija/Layout', :tag => 'x.x.x'
+```
+
 ## Pending Features
 - [ ] Multipliers
 - [ ] Aspect Ratio Constraints
