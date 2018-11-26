@@ -25,23 +25,24 @@ public protocol LayoutProvider {
     var height: LayoutProperty<DimensionAnchor> { get }
 }
 
-extension UIView: LayoutProvider { }
-public extension UIView {
-    var leading: LayoutProperty<XAnchor> { return LayoutProperty(leadingAnchor) }
-    var trailing: LayoutProperty<XAnchor> { return LayoutProperty(trailingAnchor) }
-    var top: LayoutProperty<YAnchor> { return LayoutProperty(topAnchor) }
-    var bottom: LayoutProperty<YAnchor> { return LayoutProperty(bottomAnchor) }
-
-    var centerX: LayoutProperty<XAnchor> { return LayoutProperty(centerXAnchor) }
-    var centerY: LayoutProperty<YAnchor> { return LayoutProperty(centerYAnchor) }
-
-    var width: LayoutProperty<DimensionAnchor> { return LayoutProperty(widthAnchor) }
-    var height: LayoutProperty<DimensionAnchor> { return LayoutProperty(heightAnchor) }
-
-    func pinEdges(to view: UIView, edgeInsets: UIEdgeInsets = .zero) {
-        leading == view.leading + edgeInsets.left
-        trailing == view.trailing - edgeInsets.right
-        top == view.top + edgeInsets.top
-        bottom == view.bottom - edgeInsets.bottom
+extension LayoutProvider {
+    func pinEdges(to provider: LayoutProvider, edgeInsets: UIEdgeInsets = .zero) {
+        leading == provider.leading + edgeInsets.left
+        trailing == provider.trailing - edgeInsets.right
+        top == provider.top + edgeInsets.top
+        bottom == provider.bottom - edgeInsets.bottom
     }
+}
+
+extension UIView: LayoutProvider {
+    public var leading: LayoutProperty<XAnchor> { return LayoutProperty(leadingAnchor) }
+    public var trailing: LayoutProperty<XAnchor> { return LayoutProperty(trailingAnchor) }
+    public var top: LayoutProperty<YAnchor> { return LayoutProperty(topAnchor) }
+    public var bottom: LayoutProperty<YAnchor> { return LayoutProperty(bottomAnchor) }
+
+    public var centerX: LayoutProperty<XAnchor> { return LayoutProperty(centerXAnchor) }
+    public var centerY: LayoutProperty<YAnchor> { return LayoutProperty(centerYAnchor) }
+
+    public var width: LayoutProperty<DimensionAnchor> { return LayoutProperty(widthAnchor) }
+    public var height: LayoutProperty<DimensionAnchor> { return LayoutProperty(heightAnchor) }
 }

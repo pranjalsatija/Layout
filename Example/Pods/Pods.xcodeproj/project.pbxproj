@@ -13,11 +13,11 @@
 		48BD0220E7E1E90E56B5229B43ABAC4B /* Layout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA661356D3603B1D545AFBABB79433B5 /* Layout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E212746FC9E8EDB8CCF9563580E038A8 /* Pods-Layout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6704C64652EF4D9359E8D9D7C1A30C /* Pods-Layout_Tests-dummy.m */; };
 		F551844C17288BC03C727831A65BCC1C /* Pods-Layout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5170007500DF65810EBC6D982D018DB3 /* Pods-Layout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F959DD5521A64C8F00150D7E /* LayoutUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F959DD5021A64C8E00150D7E /* LayoutUtilities.swift */; };
-		F959DD5621A64C8F00150D7E /* LayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F959DD5121A64C8E00150D7E /* LayoutProvider.swift */; };
-		F959DD5721A64C8F00150D7E /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F959DD5221A64C8E00150D7E /* LayoutProperty.swift */; };
-		F959DD5821A64C8F00150D7E /* LayoutConstrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F959DD5321A64C8F00150D7E /* LayoutConstrainable.swift */; };
-		F959DD5921A64C8F00150D7E /* LayoutOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F959DD5421A64C8F00150D7E /* LayoutOperators.swift */; };
+		F94BD3B821AB796700CD1EBA /* LayoutOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94BD3B321AB796600CD1EBA /* LayoutOperators.swift */; };
+		F94BD3B921AB796700CD1EBA /* LayoutUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94BD3B421AB796600CD1EBA /* LayoutUtilities.swift */; };
+		F94BD3BA21AB796700CD1EBA /* LayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94BD3B521AB796600CD1EBA /* LayoutProvider.swift */; };
+		F94BD3BB21AB796700CD1EBA /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94BD3B621AB796600CD1EBA /* LayoutProperty.swift */; };
+		F94BD3BC21AB796700CD1EBA /* LayoutConstrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94BD3B721AB796600CD1EBA /* LayoutConstrainable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +53,11 @@
 		E328D472B35F5E2F6B90ADF02B859228 /* Layout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Layout.xcconfig; sourceTree = "<group>"; };
 		E7FA0EE1F7B746763F8EA684D89DB434 /* Pods-Layout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Layout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EBCBDE672D271E8C123CB1EFBC3D022B /* Pods-Layout_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Layout_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F959DD5021A64C8E00150D7E /* LayoutUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutUtilities.swift; path = ../Layout/Classes/LayoutUtilities.swift; sourceTree = "<group>"; };
-		F959DD5121A64C8E00150D7E /* LayoutProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutProvider.swift; path = ../Layout/Classes/LayoutProvider.swift; sourceTree = "<group>"; };
-		F959DD5221A64C8E00150D7E /* LayoutProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutProperty.swift; path = ../Layout/Classes/LayoutProperty.swift; sourceTree = "<group>"; };
-		F959DD5321A64C8F00150D7E /* LayoutConstrainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutConstrainable.swift; path = ../Layout/Classes/LayoutConstrainable.swift; sourceTree = "<group>"; };
-		F959DD5421A64C8F00150D7E /* LayoutOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutOperators.swift; path = ../Layout/Classes/LayoutOperators.swift; sourceTree = "<group>"; };
+		F94BD3B321AB796600CD1EBA /* LayoutOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutOperators.swift; sourceTree = "<group>"; };
+		F94BD3B421AB796600CD1EBA /* LayoutUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutUtilities.swift; sourceTree = "<group>"; };
+		F94BD3B521AB796600CD1EBA /* LayoutProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProvider.swift; sourceTree = "<group>"; };
+		F94BD3B621AB796600CD1EBA /* LayoutProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProperty.swift; sourceTree = "<group>"; };
+		F94BD3B721AB796600CD1EBA /* LayoutConstrainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstrainable.swift; sourceTree = "<group>"; };
 		FA661356D3603B1D545AFBABB79433B5 /* Layout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Layout-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +112,7 @@
 		352A3D6035B68CAB0F3EAD36E1A93784 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				F959DD4F21A64C8400150D7E /* Sources */,
+				F94BD3B221AB795100CD1EBA /* Classes */,
 				1C90477468C917A66B28AE9AAA3D7260 /* Pod */,
 				488E40425251AAA26F0EA94E46A649D2 /* Support Files */,
 			);
@@ -186,16 +186,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F959DD4F21A64C8400150D7E /* Sources */ = {
+		F94BD3B221AB795100CD1EBA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F959DD5321A64C8F00150D7E /* LayoutConstrainable.swift */,
-				F959DD5421A64C8F00150D7E /* LayoutOperators.swift */,
-				F959DD5221A64C8E00150D7E /* LayoutProperty.swift */,
-				F959DD5121A64C8E00150D7E /* LayoutProvider.swift */,
-				F959DD5021A64C8E00150D7E /* LayoutUtilities.swift */,
+				F94BD3B721AB796600CD1EBA /* LayoutConstrainable.swift */,
+				F94BD3B321AB796600CD1EBA /* LayoutOperators.swift */,
+				F94BD3B621AB796600CD1EBA /* LayoutProperty.swift */,
+				F94BD3B521AB796600CD1EBA /* LayoutProvider.swift */,
+				F94BD3B421AB796600CD1EBA /* LayoutUtilities.swift */,
 			);
-			path = Sources;
+			name = Classes;
+			path = Layout/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,12 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F959DD5621A64C8F00150D7E /* LayoutProvider.swift in Sources */,
-				F959DD5521A64C8F00150D7E /* LayoutUtilities.swift in Sources */,
-				F959DD5721A64C8F00150D7E /* LayoutProperty.swift in Sources */,
-				F959DD5921A64C8F00150D7E /* LayoutOperators.swift in Sources */,
+				F94BD3BA21AB796700CD1EBA /* LayoutProvider.swift in Sources */,
+				F94BD3BC21AB796700CD1EBA /* LayoutConstrainable.swift in Sources */,
 				1A50806C6A670855D5AF64CCA205C039 /* Layout-dummy.m in Sources */,
-				F959DD5821A64C8F00150D7E /* LayoutConstrainable.swift in Sources */,
+				F94BD3BB21AB796700CD1EBA /* LayoutProperty.swift in Sources */,
+				F94BD3B821AB796700CD1EBA /* LayoutOperators.swift in Sources */,
+				F94BD3B921AB796700CD1EBA /* LayoutUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

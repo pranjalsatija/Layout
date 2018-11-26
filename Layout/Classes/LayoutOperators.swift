@@ -8,7 +8,6 @@
 
 import UIKit
 
-public typealias NSLayoutAnchorWithOffset<T: NSObject> = (anchor: NSLayoutAnchor<T>, constant: CGFloat)
 public typealias LayoutPropertyWithOffset<T: NSObject> = (property: LayoutProperty<T>, constant: CGFloat)
 
 public func +<T: NSObject>(lhs: LayoutProperty<T>, rhs: CGFloat) -> LayoutPropertyWithOffset<T> {
@@ -27,16 +26,16 @@ public func == <T>(lhs: LayoutProperty<T>, rhs: LayoutPropertyWithOffset<T>) {
     lhs.anchor.equals(rhs.property.anchor, constant: rhs.constant)
 }
 
-public func <= <T>(lhs: LayoutProperty<T>, rhs: NSLayoutAnchor<T>) {
-    lhs.anchor.lessThanOrEqualTo(rhs)
+public func <= <T>(lhs: LayoutProperty<T>, rhs: LayoutProperty<T>) {
+    lhs.anchor.lessThanOrEqualTo(rhs.anchor)
 }
 
 public func <= <T>(lhs: LayoutProperty<T>, rhs: LayoutPropertyWithOffset<T>) {
     lhs.anchor.lessThanOrEqualTo(rhs.property.anchor, constant: rhs.constant)
 }
 
-public func >= <T>(lhs: LayoutProperty<T>, rhs: NSLayoutAnchor<T>) {
-    lhs.anchor.greaterThanOrEqualTo(rhs)
+public func >= <T>(lhs: LayoutProperty<T>, rhs: LayoutProperty<T>) {
+    lhs.anchor.greaterThanOrEqualTo(rhs.anchor)
 }
 
 public func >= <T>(lhs: LayoutProperty<T>, rhs: LayoutPropertyWithOffset<T>) {
