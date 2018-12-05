@@ -45,4 +45,9 @@ extension UIView: LayoutProvider {
 
     public var width: LayoutProperty<DimensionAnchor> { return LayoutProperty(widthAnchor) }
     public var height: LayoutProperty<DimensionAnchor> { return LayoutProperty(heightAnchor) }
+
+    public func pinEdges(to provider: LayoutProvider, edgeInsets: UIEdgeInsets = .zero) {
+        translatesAutoresizingMaskIntoConstraints = false
+        (self as LayoutProvider).pinEdges(to: provider, edgeInsets: edgeInsets)
+    }
 }
