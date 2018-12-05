@@ -46,6 +46,8 @@ To use a specific release (check the releases tab on this repo to see them all):
 pod 'Layout', :git => 'https://github.com/pranjalsatija/Layout', :tag => 'x.x.x'
 ```
 
+You should also add the `-ObjC` linker flag to your project's build settings so the UIView extensions that Layout has can get properly linked. Otherwise, you'll get undefined selector errors.
+
 ## Pending Features
 - [ ] Multipliers
 - [ ] Aspect Ratio Constraints
